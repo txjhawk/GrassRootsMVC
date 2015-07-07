@@ -1,0 +1,25 @@
+{
+  "name": "GrassrootsMVC Skeleton App",
+  "homepage": "https://github.com/grassroot2013/grassroots-mvc-app",
+  "license": "MIT",
+  "author": [
+    {
+      "name": "Anthony Allen"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/grassroot2013/grassrootsMVC"
+
+    }
+  ],
+  "require":{
+    "grassroot2013/grassrootsMVC": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  }
+}

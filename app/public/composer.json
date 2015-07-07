@@ -1,0 +1,13 @@
+{
+  "name": "GrassrootsMVC Skeleton App",
+  "homepage": "https://github.com/grassroot2013/grassroots-mvc-app",
+  "license": "MIT",
+  "author": [
+    {
+      "name": "Anthony Allen"
+    }
+  ],
+  "dependencies": {
+    "foundation": "*"
+  }
+}

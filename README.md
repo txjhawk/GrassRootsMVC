@@ -1,4 +1,4 @@
-## GrassRoots MVC
+## GrassRoots MVC Skeleton App built with GrassrootsMVC
 
 #### Author: Anthony Allen
 ---
@@ -6,10 +6,9 @@
 
 * Composer
 * PHP 5.3 or later
+* Doctrine
 
 ---
-#### Description
 
-A simple PHP MVC framework using composer, doctrine, and vagrant.
 
 
