@@ -1,4 +1,4 @@
-## GrassRoots MVC Skeleton App built with GrassrootsMVC
+## GrassRoots MVC Skeleton App
 
 #### Author: Anthony Allen
 ---
