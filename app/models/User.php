@@ -2,14 +2,18 @@
 namespace app\models;
 
 use grassrootsMVC\models\Model;
+use app\entity;
 
-class User extends Model {
-
-	public function __construct() {
+class User extends Model
+{
+public $query;
+	public function __construct()
+	{
 		parent::__construct();
 	}
 
-	public function getUser() {
+	public function getUser()
+	{
 		$user = array(
 			'First Name' => 'Anthony',
 			'Last Name'  => 'Allen',
@@ -19,8 +23,13 @@ class User extends Model {
 		return $user;
 	}
 
-	public function setUserName( $username ) {
-		$this->username = $username;
+	public function setUserName($username)
+	{
+
+		$username = $this->em->find('app\entity\Users', 6);
+
+
+		return $username;
 	}
 
 }
