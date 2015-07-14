@@ -6,30 +6,24 @@ use app\entity;
 
 class User extends Model
 {
-public $query;
-	public function __construct()
-	{
-		parent::__construct();
-	}
+    public $query;
 
-	public function getUser()
-	{
-		$user = array(
-			'First Name' => 'Anthony',
-			'Last Name'  => 'Allen',
-			'Age'        => '31'
-		);
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
-		return $user;
-	}
+    public function getUser()
+    {
+        $user = $this->em->find('app\entity\Users', 1);
 
-	public function setUserName($username)
-	{
+        return $user;
+    }
 
-		$username = $this->em->find('app\entity\Users', 6);
+    public function setUserName($username)
+    {
 
-
-		return $username;
-	}
+        return $username;
+    }
 
 }
