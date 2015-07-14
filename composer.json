@@ -15,7 +15,8 @@
     }
   ],
   "require":{
-    "grassroot2013/grassrootsMVC": "dev-master"
+    "grassroot2013/grassrootsMVC": "dev-master",
+    "zurb/foundation": "dev-master"
   },
   "autoload": {
     "psr-4": {
