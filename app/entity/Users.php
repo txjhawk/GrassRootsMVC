@@ -21,7 +21,18 @@ class Users
 	/**
 	 * @Column(type="string", length=32, unique=true, nullable=false)
 	 */
-	protected $username;
+	protected $user_name;
+
+	/**
+	 * @Column(type="string", columnDefinition="VARCHAR(30) NULL")
+	 */
+	protected $first_name;
+
+	/**
+	 * @Column(type="string", columnDefinition="VARCHAR(30) NULL")
+	 */
+	protected $last_name;
+
 
 	/**
 	 * @Column(type="string", length=64, nullable=false)
@@ -33,15 +44,32 @@ class Users
 	 */
 	protected $email;
 
-	public function setUser($username, $password, $email)
+	public function setUser($user_name, $password, $email)
 	{
-		$this->username = $username;
-		$this->password = $password;
-		$this->email    = $email;
+		$this->user_name = $user_name;
+		$this->password  = $password;
+		$this->email     = $email;
 	}
 
-	public function getName(){
-		return $this->username;
+	public function setName($first_name, $last_name)
+	{
+		$this->first_name = $first_name;
+		$this->last_name  = $last_name;
+	}
+
+	public function setPassword($password)
+	{
+		$this->password = $password;
+	}
+
+	public function getName()
+	{
+		return $this->user_name;
+	}
+
+	public function getId()
+	{
+		return $this->id;
 	}
 
 }

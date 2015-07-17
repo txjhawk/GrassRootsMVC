@@ -9,6 +9,9 @@ namespace app\config;
  */
 class Configs
 {
+	const WEB_ROOT = 'http://localhost/grassroots-mvc-app/app/public';
+
+	const HOME_URL = "http://localhost/grassroots-mvc-app";
 
 	public $dbArray        = array();
 	public $frameworkArray = array();
@@ -16,7 +19,7 @@ class Configs
 	public function __construct()
 	{
 
-		$this->dbArray = $this->connectionArray();
+		$this->dbArray = $this->setDbParamsArray();
 
 	}
 
@@ -28,7 +31,7 @@ class Configs
 	 *
 	 * @return array
 	 */
-	public function connectionArray()
+	public function setDbParamsArray()
 	{
 
 		$this->dbArray = array(
@@ -87,10 +90,23 @@ class Configs
 		return $this->frameworkArray;
 	}
 
-	public function getWebRoot()
+	/**
+	 * Get HOME_URL constant so we have access to our home page.
+	 *
+	 * @return mixed
+	 */
+	public function setHomeUrl()
 	{
-		define('WEB_ROOT', 'http://localhost/grassroots-mvc-app/app/public');
+		return HOME_URL;
+	}
 
+	/**
+	 * Get WEB_ROOT constant so we have access to our public folder for loading our styles and js.
+	 *
+	 * @return mixed
+	 */
+	public function setWebRoot()
+	{
 		return WEB_ROOT;
 	}
 
