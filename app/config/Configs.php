@@ -9,7 +9,7 @@ namespace app\config;
  */
 class Configs
 {
-	const WEB_ROOT = 'http://localhost/grassroots-mvc-app/app/public';
+	const WEB_ROOT = "http://localhost/grassroots-mvc-app/app/public";
 
 	const HOME_URL = "http://localhost/grassroots-mvc-app";
 
@@ -97,7 +97,7 @@ class Configs
 	 */
 	public function setHomeUrl()
 	{
-		return HOME_URL;
+		return self::HOME_URL;
 	}
 
 	/**
@@ -107,7 +107,7 @@ class Configs
 	 */
 	public function setWebRoot()
 	{
-		return WEB_ROOT;
+		return self::WEB_ROOT;
 	}
 
 }

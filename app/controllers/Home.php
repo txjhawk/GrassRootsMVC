@@ -4,7 +4,7 @@ namespace app\controllers;
 
 use app\models\User;
 use grassrootsMVC\controllers\Controller;
-use app\config\Configs;
+use grassrootsMVC\config\Config;
 use app\controllers\todo;
 use app\entity\Tasks;
 /**
@@ -22,7 +22,7 @@ class Home extends Controller
 	public function index()
 	{
 		$user         = new User();
-		$config       = new Configs();
+		$config       = new Config();
 		$current_user = $user->getUser();
 
 		$todo = new todo\Todo();
