@@ -6,42 +6,70 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @Entity
- * @Table(name="user")
+ * @ORM\Entity
+ * @ORM\Table(name="user")
  */
 class Users
 {
 	/**
-	 * @Id
-	 * @Column(type="integer", nullable=false)
-	 * @GeneratedValue(strategy="AUTO")
+	 * @ORM\Id
+	 * @ORM\Column(type="integer", nullable=false)
+	 * @ORM\GeneratedValue(strategy="AUTO")
 	 */
 	protected $id;
 
 	/**
-	 * @Column(type="string", length=32, unique=true, nullable=false)
+	 * @ORM\Column(type="string", length=32, unique=true, nullable=false)
 	 */
-	protected $username;
+	protected $user_name;
 
 	/**
-	 * @Column(type="string", length=64, nullable=false)
+	 * @ORM\Column(type="string", columnDefinition="VARCHAR(30) NULL")
+	 */
+	protected $first_name;
+
+	/**
+	 * @ORM\Column(type="string", columnDefinition="VARCHAR(30) NULL")
+	 */
+	protected $last_name;
+
+
+	/**
+	 * @ORM\Column(type="string", length=64, nullable=false)
 	 */
 	protected $password;
 
 	/**
-	 * @Column(type="string", length=255, unique=true, nullable=false)
+	 * @ORM\Column(type="string", length=255, unique=true, nullable=false)
 	 */
 	protected $email;
 
 	public function setUser($username, $password, $email)
 	{
-		$this->username = $username;
-		$this->password = $password;
-		$this->email    = $email;
+		$this->user_name = $username;
+		$this->password  = $password;
+		$this->email     = $email;
 	}
 
-	public function getName(){
+	public function setName($first_name, $last_name)
+	{
+		$this->first_name = $first_name;
+		$this->last_name  = $last_name;
+	}
+
+	public function setPassword($password)
+	{
+		$this->password = $password;
+	}
+
+	public function getName()
+	{
 		return $this->username;
+	}
+
+	public function getId()
+	{
+		return $this->id;
 	}
 
 }

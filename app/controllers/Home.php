@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\User;
 use grassrootsMVC\controllers\Controller;
 use app\config\Configs;
+use app\controllers\todo;
 
 /**
  * Class Home
@@ -23,6 +24,10 @@ class Home extends Controller
 		$user         = new User();
 		$config       = new Configs();
 		$current_user = $user->getUser();
+
+		$todo = new todo\Todo();
+
+
 
 		$data              = array();
 		$data['title']     = 'Sample TODO App';
