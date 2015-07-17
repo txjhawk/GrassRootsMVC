@@ -10,13 +10,20 @@ use grassrootsMVC\controllers\Controller;
 class Products extends Controller
 {
 
-	public function __construct()
-	{
-		parent::__construct();
-	}
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
-	public function getProducts()
-	{
-		echo 'These are our products';
-	}
+    public function index()
+    {
+
+        echo 'products page';
+
+    }
+
+    public function getProducts()
+    {
+        echo 'These are our products';
+    }
 }
