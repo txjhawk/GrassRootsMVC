@@ -6,40 +6,40 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
- * @ORM\Table(name="tasks")
+ * @Entity
+ * @Table(name="tasks")
  */
 class Tasks
 {
 	/**
-	 * @ORM\Id
-	 * @ORM\Column(type="integer", nullable=false)
-	 * @ORM\GeneratedValue(strategy="AUTO")
+	 * @Id
+	 * @Column(type="integer", nullable=false)
+	 * @GeneratedValue(strategy="AUTO")
 	 */
 	protected $id;
 
 	/**
-	 * @ORM\Column(type="string")
+	 * @Column(type="string")
 	 */
 	protected $task_name;
 
 	/**
-	 * @ORM\Column(type="string", columnDefinition="VARCHAR(500) NULL")
+	 * @Column(type="string", columnDefinition="VARCHAR(500) NULL")
 	 */
 	protected $task_description;
 
 	/**
-	 * @ORM\Column(type="datetime")
+	 * @Column(type="datetime")
 	 */
 	protected $task_created_date;
 
 	/**
-	 * @ORM\Column(type="datetime")
+	 * @Column(type="datetime")
 	 */
 	protected $task_complete_date;
 
 	/**
-	 * @ORM\Column(type="string", columnDefinition="VARCHAR(30) NULL")
+	 * @Column(type="string", columnDefinition="VARCHAR(30) NULL")
 	 */
 	protected $task_owner;
 
