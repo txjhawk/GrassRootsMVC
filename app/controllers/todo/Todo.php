@@ -1,16 +1,20 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: allenant
- * Date: 7/16/2015
- * Time: 4:28 PM
- */
 
 namespace app\controllers\todo;
 
+use grassrootsMVC\controllers\Controller;
 
-class Todo
+/**
+ * Class Todo
+ * @package app\controllers\todo
+ */
+class Todo extends Controller
 {
+
+	public function __construct()
+	{
+		parent::__construct();
+	}
 
 	public function index()
 	{

@@ -5,6 +5,7 @@
 			<p><?= $message; ?></p>
 
 			<p>A user name we pulled from our user model: <?= $firstname ?></p>
+			<p><?php echo ' Task ' . $task; ?></p>
 		</div>
 	</article>
 </section>
