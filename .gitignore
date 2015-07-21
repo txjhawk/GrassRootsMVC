@@ -1,7 +1,7 @@
 .composer.json.swo
 composer.lock
 composer.phar
-node_nodules
+node_modules
 vendor
 gems_dir
 .idea

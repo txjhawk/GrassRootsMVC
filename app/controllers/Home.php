@@ -33,8 +33,8 @@ class Home extends Controller
 
 		$data              = array();
 		$data['title']     = 'Sample TODO App';
-		$data['firstname'] = $current_user->getName();
-		$data['task'] = $task->getTaskName();
+//		$data['firstname'] = $current_user->getName();
+//		$data['task'] = $task->getTaskName();
 
 		$data['message']   = 'Here is a message created in our Home controller';
 		$data['root']      = $config->getWebRoot();
