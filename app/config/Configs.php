@@ -9,9 +9,9 @@ namespace app\config;
  */
 class Configs
 {
-	const WEB_ROOT = "http://localhost/grassroots-mvc-app/app/public";
+	const WEB_ROOT = "http://localhost:8000/sample-app/app/public";
 
-	const HOME_URL = "http://localhost/grassroots-mvc-app";
+	const HOME_URL = "http://localhost/sample-app";
 
 	public $dbArray        = array();
 	public $frameworkArray = array();
@@ -37,7 +37,7 @@ class Configs
 		$this->dbArray = array(
 			"dbname"   => 'test',
 			"user"     => 'root',
-			"password" => 'root',
+			"password" => '',
 			"host"     => 'localhost',
 			"driver"   => 'pdo_mysql'
 		);
