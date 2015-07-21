@@ -11,7 +11,7 @@ class Configs
 {
 	const WEB_ROOT = "http://localhost:8000/sample-app/app/public";
 
-	const HOME_URL = "http://localhost/sample-app";
+	const HOME_URL = "http://localhost:8000/sample-app";
 
 	public $dbArray        = array();
 	public $frameworkArray = array();
