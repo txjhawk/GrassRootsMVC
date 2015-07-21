@@ -3,6 +3,7 @@
 namespace app\controllers\todo;
 
 use grassrootsMVC\controllers\Controller;
+use grassrootsMVC\config\Config;
 
 /**
  * Class Todo
@@ -18,6 +19,14 @@ class Todo extends Controller
 
 	public function index()
 	{
-		echo 'todo';
+        $config       = new Config();
+
+		$data['todo'] = 'todo';
+        $data['root']      = $config->getWebRoot();
+        $data['home_url']  = $config->getHomeURL();
+
+        $this->view->getView('header', $data, true);
+        $this->view->getView('todo', $data, true);
+        $this->view->getView('footer', $data, true);
 	}
 }

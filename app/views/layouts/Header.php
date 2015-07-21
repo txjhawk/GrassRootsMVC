@@ -13,8 +13,22 @@
 
 </head>
 <body>
+<!-- Top Bar Section -->
+<div class="contain-to-grid">
+    <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+            <li class="name"><h1><a href="<?= $home_url; ?>">Todo App</a></h1></li>
+        </ul>
+        <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+                <li class="active"><a href="<?= $home_url; ?>/todo">Todo List</a></li>
+            </ul>
+        </section>
+    </nav>
+</div>
+<!-- Main Site Header -->
 <div class="row">
     <header id="main-header" class="small-12 large-12 columns">
-        <h1><?= $title; ?></h1>
     </header>
 </div>

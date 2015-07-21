@@ -38,6 +38,7 @@ class Home extends Controller
 
 		$data['message']   = 'Here is a message created in our Home controller';
 		$data['root']      = $config->getWebRoot();
+        $data['home_url']  = $config->getHomeURL();
 		// Lets load our views
 		$this->view->getView('header', $data, TRUE);
 		$this->view->getView('home', $data);
