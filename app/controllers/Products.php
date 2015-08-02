@@ -1,7 +1,7 @@
 <?php
 namespace app\controllers;
 
-use grassrootsMVC\controllers\Controller;
+use GrassRootsMVC\Routing\Controller;
 
 /**
  * Class Products

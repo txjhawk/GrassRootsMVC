@@ -10,7 +10,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/grassroot2013/grassrootsMVC"
+      "url": "https://github.com/grassroot2013/framework"
 
     }
   ],
@@ -21,7 +21,7 @@
   "autoload": {
     "psr-4": {
       "app\\": "app",
-      "grassrootsMVC\\": "grassroots2013/grassrootsMVC/"
+      "GrassRootsMVC\\": "grassroots2013/framework/src"
     }
   }
 }
