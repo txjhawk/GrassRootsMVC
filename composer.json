@@ -21,7 +21,7 @@
   "autoload": {
     "psr-4": {
       "app\\": "app",
-      "grassrootsMVC\\": "grassroots2013/grassrootsMVC/"
+      "GrassRootsMVC\\": "grassroots2013/grassrootsMVC/src"
     }
   }
 }

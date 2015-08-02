@@ -1,7 +1,7 @@
 <?php
 namespace app\models;
 
-use grassrootsMVC\models\Model;
+use GrassRootsMVC\Database\Model;
 use app\entity;
 
 class User extends Model

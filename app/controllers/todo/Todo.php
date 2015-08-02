@@ -2,8 +2,8 @@
 
 namespace app\controllers\todo;
 
-use grassrootsMVC\controllers\Controller;
-use grassrootsMVC\config\Config;
+use GrassRootsMVC\Routing\Controller;
+use GrassRootsMVC\Configs\Config;
 
 /**
  * Class Todo
