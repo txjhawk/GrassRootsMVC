@@ -7,7 +7,7 @@
 // Load plugins
 var gulp     = require( 'gulp' ),
 plugins      = require( 'gulp-load-plugins' )( { camelize: true } ),
-sass         = require( 'gulp-ruby-sass' ),
+sass         = require( 'gulp-sass' ),
 autoprefixer = require( 'gulp-autoprefixer' ),
 minifyCss    = require( 'gulp-minify-css' ),
 jshint       = require( 'gulp-jshint' ),
