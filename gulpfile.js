@@ -20,7 +20,8 @@ imagemin     = require( 'gulp-imagemin' );
 // Styles tasks
 gulp.task( 'sass', function()
 {
-    return sass( 'app/public/scss/app.scss', { style: 'expanded', compass: true } )
+    gulp.src( 'app/public/scss/app.scss' )
+        .pipe( sass() )
         .pipe( autoprefixer( 'last 2 versions', 'ie 8', 'ie 9', 'ios 6', 'android 4', 'safari 5', 'opera 12.1' ) )
         .pipe( gulp.dest( 'app/public/css/' ) )
         .pipe( minifyCss( { keepSpecialComments: 1 } ) )
