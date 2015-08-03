@@ -37,7 +37,7 @@ class Configs
 		$this->dbArray = array(
 			"dbname"   => 'test',
 			"user"     => 'root',
-			"password" => '',
+			"password" => 'root',
 			"host"     => 'localhost',
 			"driver"   => 'pdo_mysql'
 		);
@@ -84,7 +84,7 @@ class Configs
 			"devMode"           => TRUE,
 			"defaultController" => "Home",
 			"defaultAction"     => "index",
-			"entities"          => "../../../app/entity"
+			"entities"          => "app/entity"
 		);
 
 		return $this->frameworkArray;
